@@ -4,15 +4,12 @@ import Jsxpractice from "./jsxpractice";
 import Footer from "./footer";
 import Parent from "./parent";
 import Statecomp from "./state";
+import Updateobject from "./updatestateobject";
 function App() {
   return (
     <>
-      <Statecomp />
-      {/* <Parent />
-       <Jsxpractice />
-      <Header />
-      <Button />
-      <Footer /> */}
+      <Updateobject />
+      {/* <Statecomp /> */}
     </>
   );
 }
