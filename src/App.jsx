@@ -1,16 +1,16 @@
-import "./App.css";
-import { Header, Button } from "./Header";
-import Jsxpractice from "./jsxpractice";
-import Footer from "./footer";
-import Parent from "./parent";
-import Statecomp from "./state";
-import Updateobject from "./updatestateobject";
+import { useState } from "react";
+import EffectComp from "./effectComponet";
+import { use } from "react";
+
 function App() {
+  const [show, setshow] = useState(true);
   return (
-    <>
-      <Updateobject />
-      {/* <Statecomp /> */}
-    </>
+    <div>
+      {/* <button className="toggle-btn" onClick={() => setshow(!show)}>
+        {show ? "Hide Componet" : "show Component"}
+      </button> */}
+      {show && <EffectComp />}
+    </div>
   );
 }
 
